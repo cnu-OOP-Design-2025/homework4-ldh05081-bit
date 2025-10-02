@@ -74,8 +74,9 @@ void printStudentList(const StudentManager& manager) {
 }
 
 void printBestStudent(const StudentManager& manager) {
-    int bestID = manager.findBestStudent();
-    int idx = manager.findStudentByID(bestID);
+    // int bestID = manager.findBestStudent();
+    // int idx = manager.findStudentByID(bestID);
+    int idx = manager.findBestStudent();
     if (idx >= 0) {
         std::cout << "Best Student:" << std::endl;
         manager.printStudentInfo(idx);
